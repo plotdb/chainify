@@ -1,17 +1,17 @@
-# serialize
+# chainify
 
-serialize a seris of tasks.
+chaining a seris of tasks.
 
 
 ## Usage
 
 ```
-    serialize(list, handler = function({item,percent}) { ... return datum; })
+    chainify(list, handler = function({item,percent}) { ... return datum; })
       .then(function({data, fail}) { ... });
 ```
 
 ```
-    serialize({list, delay}, handler)
+    chainify({list, delay}, handler)
       .then(function({data, fail}) { ... });
 ```
 

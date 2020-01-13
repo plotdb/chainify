@@ -1,5 +1,5 @@
 (->
-  serialize = (opt, proc) -> new Promise (res, rej) ->
+  chainify = (opt, proc) -> new Promise (res, rej) ->
     if Array.isArray(opt) => [list, delay] = [opt, 0]
     else [list, delay] = [opt.list or [], opt.delay or 0]
     len = list.length
@@ -15,6 +15,6 @@
         .finally -> setTimeout (-> _ list), delay or 0
     _ list
 
-  if window? => window.serialize = serialize
-  if module? => module.exports = serialize
+  if window? => window.chainify = chainify
+  if module? => module.exports = chainify
 )!
