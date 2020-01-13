@@ -1,13 +1,13 @@
 {
   "author": "zbryikt",
-  "name": "serializer",
+  "name": "chainify",
   "license": "MIT",
   "description": "task serializer",
   "version": "0.0.1",
-  "homepage": "https://github.com/plotdb/serializer",
+  "homepage": "https://github.com/plotdb/chainify",
   "repository": {
     "type": "git",
-    "url": "https://github.com/plotdb/serializer"
+    "url": "https://github.com/plotdb/chainify"
   },
   "engines": {
     "node": ">=0.12.6",
