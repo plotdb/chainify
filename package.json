@@ -2,6 +2,7 @@
   "author": "zbryikt",
   "name": "chainify",
   "license": "MIT",
+  "main": "dist/chainify.js",
   "description": "task serializer",
   "version": "0.0.1",
   "homepage": "https://github.com/plotdb/chainify",

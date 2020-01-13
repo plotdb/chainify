@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 mkdir -p dist
 echo "build src/chainify.ls -> dist/chainify.js ..."
-./node_modules/.bin/lsc -cb src/chainify.ls > dist/chainify.js
+./node_modules/.bin/lsc -cbp src/chainify.ls > dist/chainify.js
 echo "minifying chainify.js ..."
 ./node_modules/.bin/uglifyjs dist/chainify.js > dist/chainify.min.js
